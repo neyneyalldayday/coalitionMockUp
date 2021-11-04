@@ -15,7 +15,7 @@ const HeroContainer = styled.div`
   padding: 0 1rem;
   position: relative;
   margin-top: -80px;
-  color: #fff;
+  color: #030303;
   `;
 
 const HeroBg = styled.div`
@@ -60,7 +60,7 @@ const H2 = styled.h1`
 margin: 0rem;
 font-size: 8rem;
 position: relative;
-color: blue;
+color: #475085;
 `;
 
 

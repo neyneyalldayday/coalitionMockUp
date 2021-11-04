@@ -6,14 +6,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 
 const HistoryContainer = styled.div`  
-  display: flex;  
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;  
   padding: 0 1rem;
   position: relative;
-  margin-top: -80px;
-  /* color: #fff; */
+  margin-top: -80px;  
   overflow: hidden;
 `;
 
@@ -33,7 +33,7 @@ background-image: url(${background});
 
 const HistoryContent = styled.div`
 display: flex;
-flex-direction: row;
+flex-direction: column;
 `;
 
 
@@ -41,37 +41,49 @@ const HistoryHeader = styled.div`
 display: flex;
 flex-direction: row;
 justify-content: center;
+
 `;
 
 const H1 = styled.h1`
 color: blue;
 opacity: 30%;
 font-size: 10rem;
-margin-left: 5rem;
+margin-left: -5rem;
+margin-top: 6rem;
+
+
 `;
 const H3 = styled.h3`
   color: blue;
   font-size: 3rem;
   padding: 0rem 2rem;
   position: relative;
-  bottom: -8rem;
+  bottom: -10rem;
   margin-left: -5rem;
   
 `;
 const P = styled.p`
 position: relative;
 display: flex;
-max-width: 50rem;
-max-height: 50rem;
+max-width: 35rem;
+min-height: 3rem;
 flex-direction: column;
-justify-content: center;
-margin-bottom: -15rem;
-margin-left: -20rem;
-margin-right: 20rem;
-margin-top: 1rem;
+font-size: 1.2rem;
+text-align: center;
+top: -60px;
 
 
 
+`;
+
+const ParagraphWrap = styled.div`
+font-size: 16px;
+max-width: 50rem;
+padding: 3rem 0;
+display: block;
+  	margin-left: auto;
+	margin-right: auto;
+;
 `;
 
 const HistoryCarousel = styled.div`
@@ -164,13 +176,19 @@ const History = ({ slides }) => {
             <HistoryContent>
                 <HistoryHeader>
                    <H1>01.</H1><H3>HISTORY</H3>
+                </HistoryHeader>
+                   <ParagraphWrap>
                    <P>Lorem ipsum dolor sit amet consectetur
                       adipisicing elit. Ea quibusdam numquam
                       dicta obcaecati! Maxime, consequuntur 
                       impedit! Quo, fuga? Libero dolorem odio
                        ipsam minus quae, facere, possimus rem,
-                      iusto harum nulla modi hic.</P>                    
-                </HistoryHeader>
+                      iusto harum nulla modi hic.                   
+                      impedit! Quo, fuga? Libero dolorem odio
+                       ipsam minus quae, facere, possimus rem,
+                      iusto harum nulla modi hic.</P> 
+                      </ParagraphWrap>                   
+               
                
                <AnimatePresence>
                <HistoryCarousel>
