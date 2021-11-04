@@ -50,13 +50,14 @@ z-index: 2;
 `;
 
 const H1 = styled.h1`
-margin: 0;
+margin: 0rem;
 font-size: 8rem;
 position: relative;
+
 `;
 
 const H2 = styled.h1`
-margin: 0;
+margin: 0rem;
 font-size: 8rem;
 position: relative;
 color: blue;

@@ -138,10 +138,10 @@ const Navbar = () => {
                 </MobileIcon>
                 <NavMenu onClick={handleClick} click={click}>
                     <NavItem>
-                        <NavLinks to="/">01.History</NavLinks>
+                        <NavLinks to="/history">01.History</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="/images">02.Team</NavLinks>
+                        <NavLinks to="/team">02.Team</NavLinks>
                     </NavItem>
                     </NavMenu>
             </NavbarContainer>
