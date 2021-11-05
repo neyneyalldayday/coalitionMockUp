@@ -18,6 +18,11 @@ box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
     top: 55%;
     left: 20%
 }
+
+@media screen and (max-width: 420px) {
+  top: 65%;
+  left: 5%; 
+}
 `;
 
 export default function PopUp2({open, children, onClick}) {

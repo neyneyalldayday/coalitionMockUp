@@ -112,6 +112,8 @@ font-weight: bold;
 
 const Card = styled.div`
 margin: 1rem 3rem;
+
+
 `;
 
 const Card2 = styled.div`
@@ -131,6 +133,8 @@ margin: 5rem;
     justify-content: center;
     align-items: center;
 }
+
+
 `;
 
 

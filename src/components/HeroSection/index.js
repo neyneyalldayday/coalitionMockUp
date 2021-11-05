@@ -59,6 +59,12 @@ position: absolute;
   margin-bottom: 4rem;
   top: 45%;
 }
+
+@media screen and (max-width: 420px){
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  top: 54%
+}
 `;
 
 const H2 = styled.h1`
@@ -73,6 +79,12 @@ color: #475085;
   top: 45%;
 }
 
+@media screen and (max-width: 420px){
+  font-size: 3.5rem;
+  margin-top: 2rem;
+  top: 55%
+}
+
 `;
 
 
@@ -82,7 +94,7 @@ const HeroSection = () => {
         <HeroContainer>
             <HeroBg/>           
             <HeroContent>
-               <H1>LosAngles</H1>
+               <H1>LosAngeles</H1>
                <H2>Mountains</H2>
             </HeroContent>
             

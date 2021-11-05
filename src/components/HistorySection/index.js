@@ -68,6 +68,10 @@ margin-left: 10rem;
   margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 420px){
+  margin-left: 5rem;
+}
+
 `;
 const H3 = styled.h3`
   color: blue;
@@ -83,6 +87,10 @@ const H3 = styled.h3`
    font-size: 2rem;
    margin-left: 7rem;
    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 420px) {
+    margin-left: 5rem;
   }
   
 `;

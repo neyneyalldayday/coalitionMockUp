@@ -12,10 +12,13 @@ const FooterContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+   
 `;
 
 const FooterWrap = styled.div`
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 90%;
@@ -24,6 +27,7 @@ const FooterWrap = styled.div`
 
     @media screen and (max-width: 820px) {
         flex-direction: column;
+       
     }
 `;
 
@@ -40,6 +44,7 @@ const Logo = styled(Link)`
 
 const LogoIcon = styled(GiMountains)`
 margin-right: 20px;
+margin-top: 1rem;
 `;
 
 const WebsiteRights = styled.small`
@@ -48,15 +53,33 @@ margin-bottom: 16px;
 
 `;
 
+const La = styled.div`
+margin-top: .5rem;
+margin-left: -53rem;
+display: flex;
+flex-direction: column;
+`;
+const P = styled.p`
+font-size: 1.5rem;
+color: #fff;
+`;
+const P2 = styled.p`
+font-size: 1.5rem;
+margin-top: -.5rem;
+color: #fff;
+`;
+
 const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
             <Logo to='/'>
-                <LogoIcon/>
-                    
-                
+                <LogoIcon/>               
             </Logo>
+            <La>
+               <P>LOSANGELES</P>   
+               <P2>MOUNTAINS</P2>   
+              </La>      
             <WebsiteRights>L.M.{new Date().getFullYear()}</WebsiteRights>
             </FooterWrap>
         </FooterContainer>
