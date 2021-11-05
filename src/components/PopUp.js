@@ -3,10 +3,18 @@ import { Button } from './Button'
 import styled from 'styled-components'
 
 const Pop = styled.div`
-height: 20rem;
+
+position: absolute;
+height: 15rem;
 width: 20rem;
+top:25%;
+left:20%;
 background-color: #fff;
+padding: 1rem;
+box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
 `;
+
+
 
 
 export default function PopUp({open, children, onClick}) {
@@ -15,7 +23,7 @@ export default function PopUp({open, children, onClick}) {
 
     return (
         <Pop>
-            <Button onClick={onClick}>close</Button>
+            <Button onClick={onClick}>SCHEDULE</Button>
             {children}
         </Pop>
     )

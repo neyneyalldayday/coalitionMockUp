@@ -54,6 +54,11 @@ margin-bottom: 6rem;
 font-size: 8rem;
 position: absolute;
 
+@media screen and (max-width: 768px) {
+  font-size: 5rem;
+  margin-bottom: 4rem;
+  top: 45%;
+}
 `;
 
 const H2 = styled.h1`
@@ -61,6 +66,12 @@ margin-top: 6rem;
 font-size: 8rem;
 position: absolute;
 color: #475085;
+
+@media screen and (max-width: 768px) {
+  font-size: 5rem;
+  margin-top: 4rem;
+  top: 45%;
+}
 
 `;
 

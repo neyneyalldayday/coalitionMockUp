@@ -63,7 +63,7 @@ color: blue;
 opacity: 30%;
 font-size: 10rem;
 justify-content: flex-start;
-margin-left: 5rem;
+margin-left: 7rem;
 @media screen and (max-width:768px){
     font-size: 5rem;
     margin: 0;
@@ -110,12 +110,31 @@ line-height: 1.1;
 font-weight: bold;
 `;
 
-const MountainCardLeft = styled.div`
-
+const Card = styled.div`
+margin: 1rem 3rem;
 `;
-const MountainCardRight = styled.div`
 
+const Card2 = styled.div`
+margin: 1rem 3rem;
 `;
+
+const MountainCards = styled.div`
+display: flex;
+flex-direction: row;
+margin: 5rem;
+
+
+@media screen and (max-width:768px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+`;
+
+
+
 
 
 const Teams = () => {
@@ -133,12 +152,30 @@ const Teams = () => {
                     <Button primary="true" onClick={() => setIsOpen(true)}> mountain1 </Button>
                     <Button primary="true" onClick={() => setIsOpen2(true)}> mountain2 </Button>
                     </Mountains>
-                    <MountainCardLeft>
-                        <PopUp open={isOpen} onClick={() => setIsOpen(false)} >poo</PopUp>
-                    </MountainCardLeft>
-                    <MountainCardRight>
-                        <PopUp2 open={isOpen2} onClick={ () => setIsOpen2(false)} >pee</PopUp2>
-                    </MountainCardRight>
+                    <MountainCards>
+                        <PopUp open={isOpen} onClick={() => setIsOpen(false)} >
+                            <Card>
+                          <p> 25 Nov 2016 Vestibulum viverra </p>  
+                          <p> 25 Nov 2016 Vestibulum viverra </p>
+                          <br></br>  
+                          <p> 25 Nov 2016 Vestibulum viverra </p>
+                          <br></br>  
+                          <p> 25 Nov 2016 Vestibulum viverra </p> 
+                            </Card> 
+                        </PopUp>
+                    
+                    
+                        <PopUp2 open={isOpen2} onClick={ () => setIsOpen2(false)} >
+                            <Card2>
+                            <p> 25 Nov 2021 Taco mountain </p>  
+                            <p> 25 Nov 2021 Burger mountain </p>
+                            <br></br>  
+                            <p> 25 Nov 2021 Pizza mountain </p>
+                            <br></br>  
+                            <p> 25 Nov 2021 Ramen mountain </p>  
+                            </Card2>
+                        </PopUp2>
+                    </MountainCards>
                 </TeamContent>
             </TeamBg>            
         </TeamContainer>

@@ -34,13 +34,23 @@ background-image: url(${background});
 const HistoryContent = styled.div`
 display: flex;
 flex-direction: column;
+
 `;
 
 
 const HistoryHeader = styled.div`
 display: flex;
 flex-direction: row;
-justify-content: center;
+flex-shrink: 3;
+flex-wrap: wrap;
+justify-content: flex-start;
+
+@media screen and (max-width: 768px) {
+  flex-direction: column;
+  justify-content: center;
+  
+  margin: 5rem;
+}
 
 `;
 
@@ -48,20 +58,32 @@ const H1 = styled.h1`
 color: blue;
 opacity: 30%;
 font-size: 10rem;
-margin-right: 30rem;
-margin-left: 1rem;
-margin-top: 6rem;
-justify-items: flex-start;
+margin-top: 7rem;
+margin-left: 10rem;
+
+
+@media screen and (max-width: 768px){
+  font-size: 5rem;
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+}
 
 `;
 const H3 = styled.h3`
   color: blue;
   font-size: 3rem;
-  padding: 0rem 2rem;
-  position: relative;
-  bottom: -10rem;
-  margin-left: -5rem;
-  right: 29rem;
+  justify-content: flex-start;
+  margin-top: 12rem;
+  margin-left: -2rem;
+ 
+  
+  
+
+  @media screen and (max-width: 768px) {
+   font-size: 2rem;
+   margin-left: 7rem;
+   margin-top: 1rem;
+  }
   
 `;
 const P = styled.p`
@@ -132,7 +154,7 @@ const MountainCard = styled(motion.img)`
     width: 20vh;
     height: 20vh;
     object-fit: contain;
-    
+    z-index: 3;
     
 `;
 
@@ -177,7 +199,8 @@ const History = ({ slides }) => {
             <HistoryBg>
             <HistoryContent>
                 <HistoryHeader>
-                   <H1>01.</H1><H3>HISTORY</H3>
+                   <H1>01.</H1>
+                   <H3>HISTORY</H3>
                 </HistoryHeader>
                    <ParagraphWrap>
                    <P>Lorem ipsum dolor sit amet consectetur
@@ -206,7 +229,7 @@ const History = ({ slides }) => {
                                   animate='visible'
                                   exit='exit'
                                   variants={fadeAnimation}
-                                  />
+                                  />                                 
                               </HistoryRails>
                           )}
                           </HistoryCardSlide> 

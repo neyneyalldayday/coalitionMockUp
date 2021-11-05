@@ -102,6 +102,28 @@ const NavLinks = styled(Link)`
     }
 `;
 
+const P = styled.p`
+font-size: 1.5rem;
+
+`;
+const P2 = styled.p`
+font-size: 1.5rem;
+margin-top: -.5rem;
+color: #475085;
+`;
+
+const LA = styled.p`
+text-decoration: none;
+display: ${({ active }) => active ? "block" : "none"};
+margin-top: 1rem;
+margin-left: -41rem;
+
+@media screen and (max-width: 960px){
+    display: none;
+}
+
+`;
+
 const Navbar = () => {
 
     const[click, setClick] = useState(false)
@@ -127,13 +149,16 @@ const Navbar = () => {
 
     return (
         <>
-        <IconContext.Provider value={{color: "#141414"}}>
+        <IconContext.Provider value={{color: "#141414"}} value={{display: 'block'}}>
         <Nav active={scroll} click={click}>
          <NavbarContainer>
                 <NavLogo to="/">
-                    <NavIcon />
-                     
+                    <NavIcon />                    
                 </NavLogo>
+                <LA active={scroll}>
+                <P>LOSANGELES</P>
+                <P2>MOUNTAINS</P2>
+                </LA>
                 <MobileIcon onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
                 </MobileIcon>
