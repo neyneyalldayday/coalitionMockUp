@@ -1,7 +1,9 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import mountain from '../../images/moutains3.jpg'
 import { Button } from '../Button';
+import PopUp  from '../../components/PopUp'
+import  PopUp2  from '../../components/PopUp2'
 
 const TeamContainer = styled.div`
  
@@ -43,6 +45,7 @@ max-height: 10rem;
 top: 0;
 display: flex;
 flex-direction: row;
+text-align: center;
 
 @media screen and (max-width:768px) {
    flex-direction: column;
@@ -60,10 +63,10 @@ color: blue;
 opacity: 30%;
 font-size: 10rem;
 justify-content: flex-start;
-
+margin-left: 5rem;
 @media screen and (max-width:768px){
-    font-size: 5rem
-    
+    font-size: 5rem;
+    margin: 0;
 }
 `;
 
@@ -73,11 +76,11 @@ const H2 = styled.h3`
   justify-content: center;
   align-items: center;
   text-align: center;
-  bottom: 5rem,;
-
+  margin-top: 5rem;
+  margin-left: -1.5rem;
   @media screen and (max-width:768px){
     font-size: 1rem;
- 
+    margin: 0;
 }
 `;
 
@@ -86,7 +89,13 @@ right: 20rem;
 text-align: center;
 align-items: center;
 justify-items: center;
+max-width: 30rem;
+margin-top: 5rem;
 
+@media screen and (max-width:768px){
+    font-size: 1rem;
+    margin: 0;
+}
 `;
 
 const Mountains = styled.div`
@@ -101,8 +110,18 @@ line-height: 1.1;
 font-weight: bold;
 `;
 
+const MountainCardLeft = styled.div`
+
+`;
+const MountainCardRight = styled.div`
+
+`;
+
 
 const Teams = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false)
     return (
         <TeamContainer>
             <TeamBg>
@@ -111,9 +130,15 @@ const Teams = () => {
                     <H1>02.</H1><H2>CLIMB</H2><P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum nihil necessitatibus sequi nisi quisquam non reiciendis autem quibusdam doloribus? </P>
                     </Header>
                     <Mountains>
-                    <Button primary="true"> mountain1 </Button>
-                    <Button primary="true"> mountain2 </Button>
+                    <Button primary="true" onClick={() => setIsOpen(true)}> mountain1 </Button>
+                    <Button primary="true" onClick={() => setIsOpen2(true)}> mountain2 </Button>
                     </Mountains>
+                    <MountainCardLeft>
+                        <PopUp open={isOpen} onClick={() => setIsOpen(false)} >poo</PopUp>
+                    </MountainCardLeft>
+                    <MountainCardRight>
+                        <PopUp2 open={isOpen2} onClick={ () => setIsOpen2(false)} >pee</PopUp2>
+                    </MountainCardRight>
                 </TeamContent>
             </TeamBg>            
         </TeamContainer>

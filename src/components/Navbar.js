@@ -87,6 +87,7 @@ const NavLinks = styled(Link)`
     padding: 0.5rem 1rem;
     height:100%;
     font-family: "Ubuntu", sans-serif;
+    text-decoration: underline;
 
     @media screen and (max-width: 960px) {
         text-align: center;
@@ -138,10 +139,10 @@ const Navbar = () => {
                 </MobileIcon>
                 <NavMenu onClick={handleClick} click={click}>
                     <NavItem>
-                        <NavLinks to="/history">01.History</NavLinks>
+                        <NavLinks to="/section1">01.History</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="/team">02.Team</NavLinks>
+                        <NavLinks to="/section2">02.Team</NavLinks>
                     </NavItem>
                     </NavMenu>
             </NavbarContainer>
