@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import mountain from '../../images/moutains3.jpg'
+import { Button } from '../Button';
 
 const TeamContainer = styled.div`
  
@@ -30,8 +31,75 @@ const TeamBg = styled.div`
   right: 0;
   left: 0;
 `;
-const TeamContent = styled.div``;
-const Mountains = styled.div``;
+const TeamContent = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+`;
+
+const Header = styled.div`
+background-color: #fefefe;
+max-height: 10rem;
+top: 0;
+display: flex;
+flex-direction: row;
+
+@media screen and (max-width:768px) {
+   flex-direction: column;
+   max-height: 30rem;
+   justify-content: center;
+}
+
+`;
+
+
+
+const H1 = styled.h1`
+
+color: blue;
+opacity: 30%;
+font-size: 10rem;
+justify-content: flex-start;
+
+@media screen and (max-width:768px){
+    font-size: 5rem
+    
+}
+`;
+
+const H2 = styled.h3`
+  color: blue;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  bottom: 5rem,;
+
+  @media screen and (max-width:768px){
+    font-size: 1rem;
+ 
+}
+`;
+
+const P = styled.p`
+right: 20rem;
+text-align: center;
+align-items: center;
+justify-items: center;
+
+`;
+
+const Mountains = styled.div`
+background-color: #475085;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 0;
+line-height: 1.1;
+font-weight: bold;
+`;
 
 
 const Teams = () => {
@@ -39,8 +107,12 @@ const Teams = () => {
         <TeamContainer>
             <TeamBg>
                 <TeamContent>
+                    <Header>
+                    <H1>02.</H1><H2>CLIMB</H2><P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum nihil necessitatibus sequi nisi quisquam non reiciendis autem quibusdam doloribus? </P>
+                    </Header>
                     <Mountains>
-
+                    <Button primary="true"> mountain1 </Button>
+                    <Button primary="true"> mountain2 </Button>
                     </Mountains>
                 </TeamContent>
             </TeamBg>            

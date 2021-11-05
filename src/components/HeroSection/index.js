@@ -50,17 +50,18 @@ z-index: 2;
 `;
 
 const H1 = styled.h1`
-margin: 0rem;
+margin-bottom: 6rem;
 font-size: 8rem;
-position: relative;
+position: absolute;
 
 `;
 
 const H2 = styled.h1`
-margin: 0rem;
+margin-top: 6rem;
 font-size: 8rem;
-position: relative;
+position: absolute;
 color: #475085;
+
 `;
 
 

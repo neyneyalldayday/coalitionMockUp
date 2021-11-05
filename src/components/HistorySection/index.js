@@ -48,9 +48,10 @@ const H1 = styled.h1`
 color: blue;
 opacity: 30%;
 font-size: 10rem;
-margin-left: -5rem;
+margin-right: 30rem;
+margin-left: 1rem;
 margin-top: 6rem;
-
+justify-items: flex-start;
 
 `;
 const H3 = styled.h3`
@@ -60,6 +61,7 @@ const H3 = styled.h3`
   position: relative;
   bottom: -10rem;
   margin-left: -5rem;
+  right: 29rem;
   
 `;
 const P = styled.p`
