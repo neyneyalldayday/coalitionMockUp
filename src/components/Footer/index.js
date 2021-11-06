@@ -1,4 +1,4 @@
-import { GiMountains } from '@react-icons/all-files/Gi/GiMountains';
+import { GiMountains } from '@react-icons/all-files/gi/GiMountains';
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
