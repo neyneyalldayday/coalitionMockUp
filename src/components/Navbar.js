@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars, FaTimes} from 'react-icons/fa'
-import { GiMountains } from "@react-icons/all-files/Gi/GiMountains";
+import { GiMountains } from "@react-icons/all-files/gi/GiMountains";
 import { IconContext } from 'react-icons/lib';
 import styled from 'styled-components';
 import {Link} from 'gatsby';
