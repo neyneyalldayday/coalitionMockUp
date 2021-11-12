@@ -49,7 +49,7 @@ justify-content: flex-start;
   flex-direction: column;
   justify-content: center;
   
-  margin: 5rem;
+  margin: 1rem;
 }
 
 `;
@@ -69,7 +69,7 @@ margin-left: 10rem;
 }
 
 @media screen and (max-width: 420px){
-  margin-left: 5rem;
+  margin-left: 7rem;
 }
 
 `;
@@ -104,7 +104,9 @@ font-size: 1.2rem;
 text-align: center;
 top: -60px;
 
-
+@media screen and (max-width: 768px) {
+  font-size: 1rem;
+}
 
 `;
 
