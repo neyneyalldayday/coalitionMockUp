@@ -55,13 +55,22 @@ margin-bottom: 16px;
 
 const La = styled.div`
 margin-top: .5rem;
-margin-left: -53rem;
+margin-left: -43rem;
 display: flex;
 flex-direction: column;
+
+@media screen and (max-width: 960px){
+    display: none;
+}
+
 `;
 const P = styled.p`
 font-size: 1.5rem;
 color: #fff;
+
+
+
+
 `;
 const P2 = styled.p`
 font-size: 1.5rem;

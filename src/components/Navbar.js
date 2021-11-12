@@ -40,6 +40,7 @@ align-items: center;
 `;
 const NavIcon = styled(GiMountains)`
 margin: 0 0.5rem 0 2rem;
+
 `;
 const MobileIcon = styled.div`
 display: none;
@@ -116,7 +117,7 @@ const LA = styled.p`
 text-decoration: none;
 display: ${({ active }) => active ? "block" : "none"};
 margin-top: 1rem;
-margin-left: -41rem;
+margin-left: -37rem;
 
 @media screen and (max-width: 960px){
     display: none;
