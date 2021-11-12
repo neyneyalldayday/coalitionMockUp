@@ -64,7 +64,7 @@ margin-left: 10rem;
 
 @media screen and (max-width: 768px){
   font-size: 5rem;
-  margin-left: 7rem;
+  margin-left: 11rem;
   margin-bottom: 1rem;
 }
 
@@ -85,7 +85,7 @@ const H3 = styled.h3`
 
   @media screen and (max-width: 768px) {
    font-size: 2rem;
-   margin-left: 7rem;
+   margin-left: 9rem;
    margin-top: 1rem;
   }
 

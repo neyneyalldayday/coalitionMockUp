@@ -96,9 +96,7 @@ const HeroSection = () => {
             <HeroContent>
                <H1>LosAngeles</H1>
                <H2>Mountains</H2>
-            </HeroContent>
-            
-            
+            </HeroContent>           
         </HeroContainer>
     )
 }
