@@ -103,7 +103,7 @@ const NavLinks = styled(Link)`
     }
 `;
 
-const P = styled.p`
+const P1 = styled.p`
 font-size: 1.5rem;
 
 `;
@@ -113,7 +113,7 @@ margin-top: -.5rem;
 color: #475085;
 `;
 
-const LA = styled.p`
+const La = styled.div`
 text-decoration: none;
 display: ${({ active }) => active ? "block" : "none"};
 margin-top: 1rem;
@@ -142,7 +142,10 @@ const Navbar = () => {
 
     useEffect(() => {
         changeNav()
-        window.addEventListener("scroll", changeNav)
+        window.addEventListener("scroll",  changeNav)
+        return() => {
+            changeNav(false)
+        }
     }, [])
 
 
@@ -156,10 +159,10 @@ const Navbar = () => {
                 <NavLogo to="/">
                     <NavIcon />                    
                 </NavLogo>
-                <LA active={scroll}>
-                <P>LOSANGELES</P>
+                <La active={scroll}>
+                <P1>LOSANGELES</P1>
                 <P2>MOUNTAINS</P2>
-                </LA>
+                </La>
                 <MobileIcon onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
                 </MobileIcon>
